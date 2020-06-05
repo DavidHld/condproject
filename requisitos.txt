@@ -1,0 +1,46 @@
+# Feito
+
+ter um menu principal
+inserir um codomino(cpf,nome,apt,debito)
+consultar o cond pelo cpf
+atualizar o deb do condomino pelo cpf [Devedor/Pagador]
+
+remover os cond # FEITO NA CONSULTA [PERGUNTAR SE É NECESSÁRIO UMA OPÇÃO APENAS PRA DELETE]
+sair do programa # FEITO
+
+adicionar condição de devedor/pagador
+
+
+
+
+# Fazendo
+
+exibir os cond devedores
+exibir os cond quites
+
+
+
+
+
+
+# Fazer
+
+
+
+
+
+
+
+
+# Finais
+
+
+
+
+
+
+
+
+
+
+
