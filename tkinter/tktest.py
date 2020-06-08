@@ -1,6 +1,7 @@
 from tkinter import *
 from tkinter import ttk
 from tkinter import messagebox
+import tkinter as tk
 
 """
     Este código é de experimentação, não tem função devidamente implementada e não
@@ -13,10 +14,8 @@ from tkinter import messagebox
     trabalha.
 """
 
-window = Tk()
 
-
-def principal():
+"""def principal():
 
     window.title('Teste de título primário')
     window.geometry('500x500')
@@ -37,7 +36,7 @@ def secundaria():
     btn1.grid(column=0,row=0)
 
 
-
+"""
 def clicked():
 
     messagebox.showinfo('Message title', 'Message content')
@@ -51,16 +50,16 @@ def clicked():
 
 LARGEFONT =("Verdana", 35) 
    
-class tkinterApp(Tk.Tk): 
+class tkinterApp(tk.Tk): 
       
     # __init__ function do tkinterapp
     def __init__(self, *args, **kwargs):  
           
         # __init__ do Tk
-        Tk.Tk.__init__(self, *args, **kwargs) 
+        tk.Tk.__init__(self, *args, **kwargs) 
           
 
-        container = Tk.Frame(self)   
+        container = tk.Frame(self)   
         container.pack(side = "top", fill = "both", expand = True)  
    
         container.grid_rowconfigure(0, weight = 1) 
@@ -87,9 +86,9 @@ class tkinterApp(Tk.Tk):
    
 
    
-class MainPage(Tk.Frame): 
+class MainPage(tk.Frame): 
     def __init__(self, parent, controller):  
-        Tk.Frame.__init__(self, parent) 
+        tk.Frame.__init__(self, parent) 
           
 
 
@@ -117,13 +116,11 @@ class MainPage(Tk.Frame):
    
            
    
-   
-# second window frame page1  
-class Pagina1(Tk.Frame): 
+class Pagina1(tk.Frame): 
       
     def __init__(self, parent, controller): 
           
-        Tk.Frame.__init__(self, parent) 
+        tk.Frame.__init__(self, parent) 
         label = ttk.Label(self, text ="Pagina 1", font = LARGEFONT) 
         label.grid(row = 0, column = 4, padx = 10, pady = 10) 
    
@@ -144,9 +141,9 @@ class Pagina1(Tk.Frame):
     
 
 
-class Pagina2(Tk.Frame):  
+class Pagina2(tk.Frame):  
     def __init__(self, parent, controller): 
-        Tk.Frame.__init__(self, parent) 
+        tk.Frame.__init__(self, parent) 
         label = ttk.Label(self, text ="Pagina 2", font = LARGEFONT) 
         label.grid(row = 0, column = 4, padx = 10, pady = 10) 
    
@@ -167,4 +164,4 @@ class Pagina2(Tk.Frame):
    
 # Triggers
 app = tkinterApp()
-window.mainloop()
+app.mainloop()
